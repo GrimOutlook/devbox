@@ -32,3 +32,4 @@
 - Should I use mandoc?
 - Make batcat the default pager for all programs
 - Make batcat the default pager for man pages
+- Implement [`makepkg` optimizations](https://wiki.archlinux.org/title/Makepkg#Optimization)

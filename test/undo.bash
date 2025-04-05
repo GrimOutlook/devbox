@@ -10,5 +10,8 @@ source "$SCRIPT_DIRECTORY/test_env.bash"
 
 userdel "$NEW_USERNAME"
 groupdel "sudo"
+groupdel "install"
+
+rm /etc/sudoers.d/*
 
 echo "Finished undoing install."

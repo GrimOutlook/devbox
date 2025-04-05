@@ -1,5 +1,12 @@
 {
     "cSpell.words": [
-        "nvim"
+        "devel",
+        "makepkg",
+        "noconfirm",
+        "NOPASSWD",
+        "nvim",
+        "pacman",
+        "syncdeps",
+        "userdel"
     ]
 }
