@@ -1,0 +1,10 @@
+general = [
+nvim
+wl-clipboard
+git
+openssh
+man
+bat
+micro
+ripgrep
+]
