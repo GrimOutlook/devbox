@@ -22,15 +22,13 @@
 
 1. Python should already be installed from the package TOML.
 
+## Additional tasks?
 
-## Stuff to add
 - Alias ripgrep to grep
 - Alias nvim to v,vi,vim
 - Alias batcat to cat
 - Alias batcat with follow options to tail
 - Install nerd-fonts
-man-db
-man-pages
-Should I use mandoc?
-Make batcat the default pager for all programs
-Make batcat the default pager for man pages
+- Should I use mandoc?
+- Make batcat the default pager for all programs
+- Make batcat the default pager for man pages

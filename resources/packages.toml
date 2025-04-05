@@ -1,0 +1,13 @@
+general = [
+    "bat",
+    "git",
+    "man-db",
+    "man-pages",
+    "man",
+    "micro",
+    "nvim",
+    "openssh",
+    "ripgrep",
+    "rsync",
+    "wl-clipboard",
+]
