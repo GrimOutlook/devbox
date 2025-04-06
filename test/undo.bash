@@ -24,4 +24,6 @@ pacman --noconfirm -R sudo base-devel yay
 
 rm -rf /etc/sudoers*
 
+rustup self uninstall
+
 echo "Finished undoing install."

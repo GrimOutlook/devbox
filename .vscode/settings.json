@@ -8,7 +8,9 @@
         "NOPASSWD",
         "nvim",
         "pacman",
+        "rustup",
         "syncdeps",
+        "tlsv",
         "userdel"
     ]
 }
