@@ -15,12 +15,12 @@
 
 ## Additional tasks?
 
+- Remove the `set -x` command from all file headers. Make this optional
+  depending on user input. It clutters up the console quite a bit.
 - Alias ripgrep to grep
 - Alias nvim to v,vi,vim
 - Alias batcat to cat
 - Alias batcat with follow options to tail
-- Install nerd-fonts
-- Should I use mandoc?
 - Make batcat the default pager for all programs
 - Make batcat the default pager for man pages
 - Implement [`makepkg`
@@ -32,5 +32,5 @@
 
 
 
-#Function "md" to make and cd into a directory with one command
-md () { [ $# = 1 ] && mkdir -p "$@" && cd "$@" || echo "Error - no directory passed!"; }
+#Function "md" to make and cd into a directory with one command md () { [ $# = 1
+] && mkdir -p "$@" && cd "$@" || echo "Error - no directory passed!"; }

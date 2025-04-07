@@ -21,4 +21,11 @@ echo "Starting user portion install"
 # Run the nonstandard install for regit
 "$RUNNING_DIR/scripts/install/regit.fish"
 
+# TODO: Install nerd-fonts
+
+# TODO: Setup SSH keys for given hosts so they can be used when pulling down
+# user's dotfiles repo.
+
+# TODO: Install dotfiles from user input git repository.
+
 echo "User portion install complete"

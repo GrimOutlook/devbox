@@ -38,7 +38,6 @@ mmv
 mosh
 ncdu
 neofetch
-nerdfonts-installer-bin
 netscanner
 ngrep
 nmap
