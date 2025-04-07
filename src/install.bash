@@ -21,15 +21,15 @@ source "$REPO_DIRECTORY/scripts/input.bash"
 
 # Copy the scripts into a temporary directory.
 TEMP_SCRIPTS_DIR=$("$REPO_DIRECTORY/scripts/copy_scripts.bash")
-export TEMP_SCRIPTS_DIR=$TEMP_SCRIPTS_DIR
+export RUNNING_DIR=$TEMP_SCRIPTS_DIR
 
 echo "Running the next scripts as the install user [$INSTALL_USER]" >&2
 sudo --preserve-env --user="$INSTALL_USER" bash << EOF
     # Because the environment is preserved, we need to set the HOME variable to
     # the correct location.
     export HOME="/home/$INSTALL_USER"
-    cd "$TEMP_SCRIPTS_DIR"
-    "$TEMP_SCRIPTS_DIR/scripts/user_install.bash"
+    cd "$RUNNING_DIR"
+    "$RUNNING_DIR/scripts/user_install.bash"
 EOF
 
 echo "Installation complete"

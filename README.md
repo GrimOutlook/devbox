@@ -1,18 +1,9 @@
 # Devbox
 
-## Steps
-
-1. Install packages from file.
-1. Install `yay` AUR tool.
-
 ### Neovim
 
 1. `git clone https://github.com/LunarVim/Launch.nvim.git ~/.config/nvim`
 [gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
-
-### Rust
-
-1. Install rustup
 
 ### Podman
 
@@ -32,4 +23,14 @@
 - Should I use mandoc?
 - Make batcat the default pager for all programs
 - Make batcat the default pager for man pages
-- Implement [`makepkg` optimizations](https://wiki.archlinux.org/title/Makepkg#Optimization)
+- Implement [`makepkg`
+  optimizations](https://wiki.archlinux.org/title/Makepkg#Optimization)
+- Install fish plugins
+- Configure jujutsu
+- https://github.com/sharkdp/bat/issues/977#issuecomment-1918497166
+
+
+
+
+#Function "md" to make and cd into a directory with one command
+md () { [ $# = 1 ] && mkdir -p "$@" && cd "$@" || echo "Error - no directory passed!"; }

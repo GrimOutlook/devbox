@@ -4,12 +4,18 @@
         "devel",
         "faillock",
         "makepkg",
+        "mandoc",
+        "mktemp",
         "noconfirm",
         "NOPASSWD",
         "nvim",
         "pacman",
+        "popd",
+        "pushd",
+        "REGIT",
         "rustup",
         "syncdeps",
+        "Syyu",
         "tlsv",
         "userdel"
     ]

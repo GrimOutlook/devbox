@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 # Install the sudo package so non root users can run commands as root.
-pacman -Syy --needed --noconfirm sudo
+pacman -Syyu --needed --noconfirm sudo
 
 # Add entries to the sudoers file for the install user so it can run all
 # commands without passwords. This is needed because several tools
@@ -18,7 +18,7 @@ useradd --comment "Installation user" \
         "$INSTALL_USER"
 
 # Users in the `sudo` group are allowed to run any commands with the sudo
-# command but must enter the correct password. 
+# command but must enter the correct password.
 groupadd sudo
 echo "%sudo ALL=(ALL:ALL)" >> /etc/sudoers.d/sudo.conf
 # Create a user for installation. Variables taken from `env.bash`.

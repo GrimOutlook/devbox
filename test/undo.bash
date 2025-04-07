@@ -20,7 +20,9 @@ userdel -r "$INSTALL_USER"
 groupdel "sudo"
 groupdel "install"
 
-pacman --noconfirm -R sudo base-devel yay
+for pack in $(echo "sudo base-devel yay fish" | tr " " "\n"); do
+    pacman --noconfirm -R "$pack"
+done
 
 rm -rf /etc/sudoers*
 

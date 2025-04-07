@@ -1,0 +1,3 @@
+cargo install --git https://github.com/neelkarma/redive.git
+cargo install trippy --locked
+cargo install killport
