@@ -66,3 +66,4 @@ wget
 wiki-tui
 wl-clipboard
 zoxide
+dos2unix
