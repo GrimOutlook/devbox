@@ -1,1 +1,15 @@
-/.history
+# Make this a whitelist gitignore
+/*
+
+# Source files
+!/src/
+!/test/
+
+# Git
+!.gitignore
+
+# Documentation
+!README.md
+
+# VSCode Workspace
+!/.vscode/
