@@ -3,7 +3,9 @@
 set -euxo pipefail
 
 # Install the sudo package so non root users can run commands as root.
-pacman -Syyu --needed --noconfirm sudo
+# Also install shadow because for some reason a part of the install is broken if
+# it is not included. This is only noticed when trying to run podman later.
+pacman -Syyu --needed --noconfirm sudo shadow
 
 # Add entries to the sudoers file for the install user so it can run all
 # commands without passwords. This is needed because several tools
