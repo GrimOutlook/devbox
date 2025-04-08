@@ -21,6 +21,9 @@ echo "Starting user portion install"
 # Run the nonstandard install for regit
 "$RUNNING_DIR/scripts/install/regit.fish"
 
+# TODO: Run WSL configurations if running in WSL
+# "$RUNNING_DIR/scripts/install/wsl.fish"
+
 # TODO: Install nerd-fonts
 
 # TODO: Setup SSH keys for given hosts so they can be used when pulling down
