@@ -21,6 +21,9 @@ echo "Starting user portion install"
 # Run the nonstandard install for regit
 "$RUNNING_DIR/scripts/install/regit.fish"
 
+# Install the tldr pages since they don't come prepackaged.
+"$RUNNING_DIR/scripts/install/tldr.fish"
+
 # TODO: Run WSL configurations if running in WSL
 # "$RUNNING_DIR/scripts/install/wsl.fish"
 

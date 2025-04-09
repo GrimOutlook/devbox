@@ -12,15 +12,12 @@
 ### Python
 
 1. Python should already be installed from the package TOML.
+1. Install pip packages from pip.`txt`
 
 ## Additional tasks?
 
 - Remove the `set -x` command from all file headers. Make this optional
   depending on user input. It clutters up the console quite a bit.
-- Alias ripgrep to grep
-- Alias nvim to v,vi,vim
-- Alias batcat to cat
-- Alias batcat with follow options to tail
 - Make batcat the default pager for all programs
 - Make batcat the default pager for man pages
 - Implement [`makepkg`
