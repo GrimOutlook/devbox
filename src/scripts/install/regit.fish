@@ -17,7 +17,6 @@ trap '{ echo "Failed to install yay. Popping out of (pwd);" \
     popd >/dev/null; exit 1; }' \
     SIGINT SIGTERM ERR
 
-pushd
 wget $REGIT_LINK -O $REGIT_TAR_NAME || return
 tar -xzf $REGIT_TAR_NAME || return
 chmod +x "regit"

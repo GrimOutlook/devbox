@@ -9,4 +9,7 @@ source "$SCRIPT_DIRECTORY/test_env.bash"
 "$SCRIPT_DIRECTORY/../src/install.bash" <<EOF
     $NEW_USERNAME
     $NEW_USER_PASSWORD
+    $ANSWER
+    $DOTFILE_REPO_LINK
+
 EOF

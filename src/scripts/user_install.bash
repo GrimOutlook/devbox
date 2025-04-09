@@ -2,7 +2,7 @@
 # Set the script to exit when errors are hit
 set -euxo pipefail
 
-echo "Starting user portion install"
+echo "Starting user portion install"W
 
 # TODO: Set local/LANG
 
@@ -32,5 +32,6 @@ echo "Starting user portion install"
 # user's dotfiles repo.
 
 # Install dotfiles from user input git repository.
+"$RUNNING_DIR/scripts/install/dotfiles.fish"
 
 echo "User portion install complete"
