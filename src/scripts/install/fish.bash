@@ -6,4 +6,7 @@ echo "Installing fish shell"
 
 yay -S --noconfirm fish
 
+# Make the new user's default shell fish
+sudo usermod --shell /usr/bin/fish $NEW_USERNAME
+
 echo "Finished installing fish shell"

@@ -18,16 +18,8 @@
 
 - Remove the `set -x` command from all file headers. Make this optional
   depending on user input. It clutters up the console quite a bit.
-- Make batcat the default pager for all programs
-- Make batcat the default pager for man pages
 - Implement [`makepkg`
   optimizations](https://wiki.archlinux.org/title/Makepkg#Optimization)
 - Install fish plugins
 - Configure jujutsu
 - https://github.com/sharkdp/bat/issues/977#issuecomment-1918497166
-
-
-
-
-#Function "md" to make and cd into a directory with one command md () { [ $# = 1
-] && mkdir -p "$@" && cd "$@" || echo "Error - no directory passed!"; }

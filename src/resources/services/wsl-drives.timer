@@ -1,0 +1,10 @@
+[Unit]
+Description=Run wsl-drives.service every second.
+
+[Timer]
+OnUnitInactiveSec=1s
+AccuracySec=1s
+Unit=wsl-drives.service
+
+[Install]
+WantedBy=multi-user.target

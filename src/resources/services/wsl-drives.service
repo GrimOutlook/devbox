@@ -1,0 +1,10 @@
+[Unit]
+Description=Connects drives to WSL instance when they are mounted to windows.
+
+[Service]
+Restart=no
+Type=simple
+ExecStart=/usr/bin/wsl-mount-drive
+
+[Install]
+WantedBy=multi-user.target
