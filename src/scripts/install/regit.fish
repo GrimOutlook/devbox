@@ -4,8 +4,7 @@ echo "Installing regit"
 
 set REGIT_DIR_NAME "regit_Linux_x86_64"
 set REGIT_TAR_NAME "$REGIT_DIR_NAME.tar.gz"
-set REGIT_LINK
-"https://github.com/woaitsAryan/regit/releases/latest/download/$REGIT_TAR_NAME"
+set REGIT_LINK "https://github.com/woaitsAryan/regit/releases/latest/download/$REGIT_TAR_NAME"
 
 # Make a temp folder to do the yay installation and move into it
 pushd (mktemp -d) >/dev/null || exit 1
