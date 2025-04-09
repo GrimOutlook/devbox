@@ -4,6 +4,8 @@ set -euxo pipefail
 
 echo "Starting user portion install"
 
+# TODO: Set local/LANG
+
 # Install the `yay` package manager
 "$RUNNING_DIR/scripts/install/yay.bash"
 
@@ -32,6 +34,7 @@ echo "Starting user portion install"
 # TODO: Setup SSH keys for given hosts so they can be used when pulling down
 # user's dotfiles repo.
 
-# TODO: Install dotfiles from user input git repository.
+# Install dotfiles from user input git repository.
+"$RUNNING_DIR/scripts/install/dotfiles.fish"
 
 echo "User portion install complete"

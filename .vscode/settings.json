@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "argparse",
         "DEVBOX",
         "devel",
         "faillock",
@@ -17,6 +18,7 @@
         "syncdeps",
         "Syyu",
         "tlsv",
+        "untar",
         "userdel"
     ]
 }

@@ -6,7 +6,7 @@ REPO_DIRECTORY=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pw
 export REPO_DIRECTORY="$REPO_DIRECTORY"
 
 # Verify that this script is being run as root
-"$REPO_DIRECTORY/scripts/helpers/root_check.bash" || exit 1
+"$REPO_DIRECTORY/scripts/helpers/root_check.bash" || return 1
 
 # Import predefined variables
 source "$REPO_DIRECTORY/scripts/helpers/env.bash"
@@ -15,7 +15,7 @@ source "$REPO_DIRECTORY/scripts/helpers/env.bash"
 source "$REPO_DIRECTORY/scripts/helpers/input.bash"
 
 # Create a developer user. A non root user is needed for several operations.
-"$REPO_DIRECTORY/scripts/helpers/create_user.bash" || exit 1
+"$REPO_DIRECTORY/scripts/helpers/create_user.bash" || return 1
 
 # Copy the scripts into a temporary directory.
 TEMP_SCRIPTS_DIR=$("$REPO_DIRECTORY/scripts/helpers/copy_scripts.bash")
@@ -29,5 +29,8 @@ sudo --preserve-env --user="$INSTALL_USER" bash << EOF
     cd "$RUNNING_DIR"
     "$RUNNING_DIR/scripts/user_install.bash"
 EOF
+
+# Remove anything temporarily added during the install
+"$REPO_DIRECTORY/scripts/helpers/cleanup.bash" || return 1
 
 echo "Installation complete"
