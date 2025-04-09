@@ -8,6 +8,7 @@ ctop
 curlie
 devbox
 dive
+dos2unix
 duf
 dust
 eza
@@ -66,4 +67,3 @@ wget
 wiki-tui
 wl-clipboard
 zoxide
-dos2unix

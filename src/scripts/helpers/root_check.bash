@@ -4,5 +4,5 @@ set -euxo pipefail
 
 if [ "$(id -u)" -ne 0 ]; then
     echo "DEVBOX install must be done by a root user." >&2
-    exit 1
+    return 1
 fi

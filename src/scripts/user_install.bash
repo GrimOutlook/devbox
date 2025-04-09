@@ -2,7 +2,7 @@
 # Set the script to exit when errors are hit
 set -euxo pipefail
 
-echo "Starting user portion install"W
+echo "Starting user portion install"
 
 # TODO: Set local/LANG
 
