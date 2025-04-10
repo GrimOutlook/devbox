@@ -5,11 +5,13 @@ function read_confirm() {
 
     read -r -p "$1 [y/n]: " yn
 
+    echo "Yes No: $yn"
+
     case $yn in
       [yY] )
-        return 0;;
-      [nN] )
         return 1;;
+      [nN] )
+        return 0;;
       * ) echo "Only [y] or [n] are accepted";;
     esac
 

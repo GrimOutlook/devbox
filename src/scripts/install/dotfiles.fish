@@ -41,7 +41,7 @@ else if test -f "$DOTFILES_REPO_LINK/install.fish"
 end
 
 if set -u INSTALL_SCRIPT
-    ./$INSTALL_SCRIPT || {
+    ./"$INSTALL_SCRIPT" || {
         echo "Install script [$INSTALL_SCRIPT] from dotfiles repo [$DOTFILES_REPO_LINK] failed"
         return 1
     }

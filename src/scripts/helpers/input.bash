@@ -13,7 +13,7 @@ export NEW_USER_PASSWORD="$NEW_USER_PASSWORD"
 while true; do
     # Get user's dotfiles repo. This must be public for it to pull correctly.
     PROMPT="Would you like to clone a public dotfiles repo to the user's home?"
-    if [[ $(read_confirm "$PROMPT") -eq 0 ]]; then
+    if read_confirm "$PROMPT"; then
         break
     fi
 

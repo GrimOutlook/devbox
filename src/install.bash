@@ -15,7 +15,7 @@ source "$REPO_DIRECTORY/scripts/helpers/env.bash"
 source "$REPO_DIRECTORY/scripts/helpers/input.bash"
 
 # Create a developer user. A non root user is needed for several operations.
-"$REPO_DIRECTORY/scripts/helpers/create_user.bash" || return 1
+"$REPO_DIRECTORY/scripts/helpers/create_user.bash"
 
 # Copy the scripts into a temporary directory.
 TEMP_SCRIPTS_DIR=$("$REPO_DIRECTORY/scripts/helpers/copy_scripts.bash")
@@ -31,6 +31,6 @@ sudo --preserve-env --user="$INSTALL_USER" bash << EOF
 EOF
 
 # Remove anything temporarily added during the install
-"$REPO_DIRECTORY/scripts/helpers/cleanup.bash" || return 1
+"$REPO_DIRECTORY/scripts/helpers/cleanup.bash"
 
 echo "Installation complete"
