@@ -10,6 +10,7 @@
         "noconfirm",
         "NOPASSWD",
         "nvim",
+        "osrelease",
         "pacman",
         "popd",
         "pushd",

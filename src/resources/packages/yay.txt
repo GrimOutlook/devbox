@@ -69,3 +69,23 @@ wget
 wiki-tui
 wl-clipboard
 zoxide
+hyperfine
+xcp
+watchexec
+
+# Upgrade all packages at once, no matter the package manager
+# https://github.com/topgrade-rs/topgrade
+topgrade
+
+# Lines of code counter
+# https://github.com/XAMPPRocky/tokei
+tokei
+
+# Search for secrets in your code
+ripsecrets
+
+# Create color schemese in terminal
+pastel
+
+# Painless compression and decompression in the terminal
+ouch

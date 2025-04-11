@@ -28,10 +28,13 @@ export HOME="/home/$INSTALL_USER"
 "$RUNNING_DIR/scripts/install/regit.fish"
 
 # Install the tldr pages since they don't come prepackaged.
-"$RUNNING_DIR/scripts/install/tldr.fish"
+"$RUNNING_DIR/scripts/configuration/tldr.fish"
 
-# TODO: Run WSL configurations if running in WSL
-# "$RUNNING_DIR/scripts/install/wsl.fish"
+# Run WSL configurations if running in WSL
+OS_VERSION="/proc/sys/kernel/osrelease"
+if [[ $(rg -i "microsoft" "$OS_VERSION") ]] && [[ $(rg -i "wsl" "$OS_VERSION") ]]; then
+    "$RUNNING_DIR/scripts/configuration/wsl.fish"
+fi
 
 # TODO: Install nerd-fonts
 

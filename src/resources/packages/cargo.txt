@@ -1,3 +1,31 @@
-cargo install --git https://github.com/neelkarma/redive.git
-cargo install trippy --locked
-cargo install killport
+# Wipes all "target" or "node_modules" directories in current path recursively
+# https://github.com/mihai-dinculescu/cargo-wipe
+cargo-wipe
+
+# Redirect investigator
+# https://github.com/neelkarma/redive
+--git https://github.com/neelkarma/redive.git
+
+# Traceroute replacement
+# https://github.com/fujiapple852/trippy
+trippy
+
+# Kill processes using the current port
+# https://github.com/jkfran/killport
+killport
+
+# Parse toml files from the command line
+# https://github.com/gnprice/toml-cli
+toml-cli
+
+# Dotfile manager and templater
+# https://github.com/supercuber/dotter
+dotter
+
+# Batch rename tool
+# https://github.com/ismaelgv/rnr
+rnr
+
+# Interactive pipeline writer
+# https://github.com/Elkowar/pipr
+pipr
