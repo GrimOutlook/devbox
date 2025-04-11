@@ -24,25 +24,28 @@ trap '{
     }' \
     INT TERM
 
+set DOTFILES_DIRECTORY "/home/$NEW_USERNAME/.dotfiles"
+
 # Install the repo to .dotfiles in the new user's home directory.
-git clone "$DOTFILES_REPO_LINK" /home/$NEW_USERNAME/.dotfiles || {
+git clone "$DOTFILES_REPO_LINK" $DOTFILES_DIRECTORY || {
     popd >/dev/null
     echo "Failed to pull down dotfiles repo [$DOTFILES_REPO_LINK]"
     return 1
 }
 
 # Run the install script if there is one
-if test -f "$DOTFILES_REPO_LINK/install.sh"
-    set INSTALL_SCRIPT "$DOTFILES_REPO_LINK/install.sh"
-else if test -f "$DOTFILES_REPO_LINK/install.bash"
-    set INSTALL_SCRIPT "$DOTFILES_REPO_LINK/install.bash"
-else if test -f "$DOTFILES_REPO_LINK/install.fish"
-    set INSTALL_SCRIPT "$DOTFILES_REPO_LINK/install.fish"
+if test -f "$DOTFILES_DIRECTORY/install.sh"
+    set INSTALL_SCRIPT "$DOTFILES_DIRECTORY/install.sh"
+else if test -f "$DOTFILES_DIRECTORY/install.bash"
+    set INSTALL_SCRIPT "$DOTFILES_DIRECTORY/install.bash"
+else if test -f "$DOTFILES_DIRECTORY/install.fish"
+    set INSTALL_SCRIPT "$DOTFILES_DIRECTORY/install.fish"
 end
 
-if set -u INSTALL_SCRIPT
+if set -q INSTALL_SCRIPT
     echo "Running install script [$INSTALL_SCRIPT]"
-    ./"$INSTALL_SCRIPT" || {
+    chmod +x "$INSTALL_SCRIPT"
+    "$INSTALL_SCRIPT" || {
         echo "Install script [$INSTALL_SCRIPT] from dotfiles repo [$DOTFILES_REPO_LINK] failed"
         return 1
     }

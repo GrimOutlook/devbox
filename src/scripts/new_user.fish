@@ -7,6 +7,9 @@ echo "Starting new user portion install"
 set -gx HOME "/home/$NEW_USERNAME"
 export HOME=$HOME
 
+# Install rustup for the new user as well
+"$RUNNING_DIR/scripts/install/rust.bash"
+
 # TODO: Setup SSH keys for given hosts so they can be used when pulling down
 # user's dotfiles repo.
 
