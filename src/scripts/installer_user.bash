@@ -2,7 +2,11 @@
 # Set the script to exit when errors are hit
 set -euxo pipefail
 
-echo "Starting user portion install"
+echo "Starting installer user portion install"
+
+# Because the environment is preserved from the root account, we need to set the
+# HOME variable to the correct location.
+export HOME="/home/$INSTALL_USER"
 
 # TODO: Set local/LANG
 
@@ -31,10 +35,7 @@ echo "Starting user portion install"
 
 # TODO: Install nerd-fonts
 
-# TODO: Setup SSH keys for given hosts so they can be used when pulling down
-# user's dotfiles repo.
+echo "Running the next scripts as the new user [$NEW_USERNAME]" >&2
+sudo --preserve-env --user="$NEW_USERNAME" "$RUNNING_DIR/scripts/new_user.fish"
 
-# Install dotfiles from user input git repository.
-"$RUNNING_DIR/scripts/install/dotfiles.fish"
-
-echo "User portion install complete"
+echo "Installer user portion install complete"

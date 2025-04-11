@@ -22,13 +22,8 @@ TEMP_SCRIPTS_DIR=$("$REPO_DIRECTORY/scripts/helpers/copy_scripts.bash")
 export RUNNING_DIR=$TEMP_SCRIPTS_DIR
 
 echo "Running the next scripts as the install user [$INSTALL_USER]" >&2
-sudo --preserve-env --user="$INSTALL_USER" bash << EOF
-    # Because the environment is preserved, we need to set the HOME variable to
-    # the correct location.
-    export HOME="/home/$INSTALL_USER"
-    cd "$RUNNING_DIR"
-    "$RUNNING_DIR/scripts/user_install.bash"
-EOF
+sudo --preserve-env --user="$INSTALL_USER" bash \
+    "$RUNNING_DIR/scripts/installer_user.bash"
 
 # Remove anything temporarily added during the install
 "$REPO_DIRECTORY/scripts/helpers/cleanup.bash"

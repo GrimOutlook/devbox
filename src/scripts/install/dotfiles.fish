@@ -41,10 +41,12 @@ else if test -f "$DOTFILES_REPO_LINK/install.fish"
 end
 
 if set -u INSTALL_SCRIPT
+    echo "Running install script [$INSTALL_SCRIPT]"
     ./"$INSTALL_SCRIPT" || {
         echo "Install script [$INSTALL_SCRIPT] from dotfiles repo [$DOTFILES_REPO_LINK] failed"
         return 1
     }
+    echo "Finished running dotfiles install script [$INSTALL_SCRIPT]"
 else
     echo "No install script to run for dotfiles repository."
     echo "Please move dotfiles from /home/$NEW_USERNAME/.dotfiles to the"

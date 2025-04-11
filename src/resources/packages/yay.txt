@@ -21,6 +21,7 @@ ghidra
 git
 git-delta
 git-filter-repo
+github-cli
 glances
 glow
 gping
@@ -62,10 +63,9 @@ rustcat
 sd
 sysz
 tetrs
+tlrc
 tmux
 wget
 wiki-tui
 wl-clipboard
 zoxide
-dos2unix
-tlrc
