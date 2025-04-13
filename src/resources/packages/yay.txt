@@ -34,6 +34,9 @@ lnav
 man
 man-db
 man-pages
+
+# Create books with markdown
+# https://rust-lang.github.io/mdBook/index.html
 mdbook
 micro
 mmv

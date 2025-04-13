@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "$REPO_DIRECTORY/scripts/helpers/functions/read_yn.bash"
+source "$REPO_DIRECTORY/scripts/helpers/read_yn.bash"
 
 # Get the username for the user to create
 read -rp "Username to create: " NEW_USERNAME

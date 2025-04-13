@@ -26,6 +26,6 @@ sudo --preserve-env --user="$INSTALL_USER" bash \
     "$RUNNING_DIR/scripts/installer_user.bash"
 
 # Remove anything temporarily added during the install
-"$REPO_DIRECTORY/scripts/helpers/cleanup.bash"
+"$REPO_DIRECTORY/scripts/configuration/cleanup.bash"
 
 echo "Installation complete"

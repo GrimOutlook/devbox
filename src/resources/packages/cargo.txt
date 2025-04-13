@@ -29,3 +29,32 @@ rnr
 # Interactive pipeline writer
 # https://github.com/Elkowar/pipr
 pipr
+
+# Hash directories recursively easily
+# https://hg.sr.ht/~cyplo/legdur
+legdur
+
+# Find duplicate files easily
+# https://github.com/pkolaczk/fclones
+fclones
+
+# A cut/awk replacement
+# https://github.com/theryangeary/choose
+choose
+
+# A tool for ad hoc profiling
+# https://github.com/nnethercote/counts
+counts
+
+# A cryptographically verifiable code review system for the cargo (Rust) package
+# manager
+# https://github.com/crev-dev/cargo-crev
+cargo-crev
+
+# Background code checker
+# https://github.com/Canop/bacon
+bacon
+
+# An arbitrary-precision unit-aware calculator
+# https://github.com/printfn/fend
+fend

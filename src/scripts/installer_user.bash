@@ -24,6 +24,9 @@ export HOME="/home/$INSTALL_USER"
 # better syntax. Install the packages that can be installed using yay.
 "$RUNNING_DIR/scripts/install/packages.fish"
 
+# Install the cargo packages
+"$RUNNING_DIR/scripts/install/cargo_packages.fish"
+
 # Run the nonstandard install for regit
 "$RUNNING_DIR/scripts/install/regit.fish"
 
