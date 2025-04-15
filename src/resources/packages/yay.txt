@@ -98,3 +98,4 @@ ruby
 rubyjems
 julia
 python-pip
+zip

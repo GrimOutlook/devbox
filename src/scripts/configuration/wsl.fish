@@ -4,6 +4,10 @@
 # [wsl2]
 # kernelCommandLine = cgroup_no_v1=all systemd.unified_cgroup_hierarchy=1
 
+# TODO: Add interop to remove windows path
+# [interop]
+# appendWindowsPath = false
+
 # TODO: Make the default user the developer user
 
 # TODO: Enable systemd if it isn't already.
