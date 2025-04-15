@@ -92,3 +92,9 @@ pastel
 
 # Painless compression and decompression in the terminal
 ouch
+
+unzip
+ruby
+rubyjems
+julia
+python-pip
