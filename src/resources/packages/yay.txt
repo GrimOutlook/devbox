@@ -99,3 +99,6 @@ rubyjems
 julia
 python-pip
 zip
+luarocks
+composer
+php
