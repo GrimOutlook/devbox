@@ -1,3 +1,7 @@
+# Binary installation for rust projects
+# https://github.com/cargo-bins/cargo-binstall
+cargo-binstall
+
 # Wipes all "target" or "node_modules" directories in current path recursively
 # https://github.com/mihai-dinculescu/cargo-wipe
 cargo-wipe
@@ -6,7 +10,7 @@ cargo-wipe
 # https://github.com/neelkarma/redive
 --git https://github.com/neelkarma/redive.git
 
-# Traceroute replacement
+# Trace-route replacement
 # https://github.com/fujiapple852/trippy
 trippy
 

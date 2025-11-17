@@ -12,6 +12,6 @@ cp -r "$REPO_DIRECTORY/." "$TEMP_DIRECTORY"
 echo "Setting permissions on copied scripts" >&2
 chmod +x -vR "$TEMP_DIRECTORY" >&2
 
-# Echo the temporary directory that was created so ut can be grabbed from the
+# Echo the temporary directory that was created so it can be grabbed from the
 # outer script.
 echo "$TEMP_DIRECTORY"

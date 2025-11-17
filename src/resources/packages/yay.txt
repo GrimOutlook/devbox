@@ -58,8 +58,16 @@ procs
 python
 rclone
 regit
+
+# An interactive replacer for ripgrep that makes it easy to find and replace
+# across files on the command line.
+# https://github.com/acheronfail/repgrep
 repgrep
+
+# A modern grep that respects gitignores
+# https://github.com/BurntSushi/ripgrep
 ripgrep
+
 rmtrash
 rsync
 rustcat
@@ -70,10 +78,25 @@ tlrc
 tmux
 wget
 wiki-tui
+
 wl-clipboard
+
+# A better `cd`
 zoxide
+
+# Command line file explorer
+ranger
+
+# A command-line benchmarking tool. `time` command replacement.
+# https://github.com/sharkdp/hyperfine
 hyperfine
+
+# An extended `cp`
+# https://github.com/tarka/xcp
 xcp
+
+# Executes commands in response to file modifications
+# https://github.com/watchexec/watchexec
 watchexec
 
 # Upgrade all packages at once, no matter the package manager
@@ -87,18 +110,22 @@ tokei
 # Search for secrets in your code
 ripsecrets
 
-# Create color schemese in terminal
+# Create color schemes in terminal
 pastel
 
 # Painless compression and decompression in the terminal
 ouch
 
+# Decompress zip files
 unzip
+
+# Compress files into zip format
+zip
+
 ruby
 rubyjems
 julia
 python-pip
-zip
 luarocks
 composer
 php

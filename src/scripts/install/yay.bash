@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Set the script to exit when errors are hit
 set -euxo pipefail
 
@@ -16,7 +17,7 @@ pushd "$(mktemp -d)" >/dev/null
 # call to `trap`.
 trap '{ echo "Failed to install yay. Popping out of $(pwd)"; \
     popd >/dev/null; return 1; }' \
-    SIGINT SIGTERM ERR
+  SIGINT SIGTERM ERR
 
 # Clone, build, and install `yay`.
 git clone https://aur.archlinux.org/yay.git

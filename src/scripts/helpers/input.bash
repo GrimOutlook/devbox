@@ -11,16 +11,20 @@ read -rp "Password for new user [$NEW_USERNAME]: " -s NEW_USER_PASSWORD
 export NEW_USER_PASSWORD="$NEW_USER_PASSWORD"
 
 while true; do
-    # Get user's dotfiles repo. This must be public for it to pull correctly.
-    PROMPT="Would you like to clone a public dotfiles repo to the user's home?"
-    if read_confirm "$PROMPT"; then
-        break
-    fi
-
-    read -rp "Repo link: " DOTFILES_REPO_LINK
-
-    # TODO: Add checks to see if repo is valid before proceeding.
-
-    export DOTFILES_REPO_LINK="$DOTFILES_REPO_LINK"
+  # Get user's dotfiles repo. This must be public for it to pull correctly.
+  PROMPT="Would you like to clone a public dotfiles repo to the user's home?"
+  if read_confirm "$PROMPT"; then
     break
+  fi
+
+  read -rp "Repo link: " DOTFILES_REPO_LINK
+
+  # TODO: Add checks to see if repo is valid before proceeding.
+
+  export DOTFILES_REPO_LINK="$DOTFILES_REPO_LINK"
+
+  # TODO: Add the ability for a user to run a script from the dotfiles repo to
+  # install it. Default to `install.bash` in the root of the repo.
+
+  break
 done
