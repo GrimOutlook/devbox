@@ -1,18 +1,9 @@
 # Devbox
 
-### Neovim
+## Installation
 
-1. `git clone https://github.com/LunarVim/Launch.nvim.git ~/.config/nvim`
-[gruvbox](https://github.com/ellisonleao/gruvbox.nvim)
-
-### Podman
-
-1. Podman should already be installed from the package TOML.
-
-### Python
-
-1. Python should already be installed from the package TOML.
-1. Install pip packages from pip.`txt`
+Run the command `bash <(curl -sL https://raw.githubusercontent.com/GrimOutlook/devbox/refs/heads/main/init.bash)` from a newly installed Arch system.
+The only required commands should be `curl`, `pacman`, and `bash` which should all be installed by default.
 
 ## Additional tasks?
 
