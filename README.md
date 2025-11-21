@@ -10,6 +10,12 @@ bash <(curl -sL https://raw.githubusercontent.com/GrimOutlook/devbox/refs/heads/
 
 The only required commands should be `curl`, `pacman`, and `bash` which should all be installed by default.
 
+### WSL Quickstart
+```bash
+wsl --install --no-launch archlinux
+wsl -d archlinux -- eval "bash <(curl -sL https://raw.githubusercontent.com/GrimOutlook/devbox/refs/heads/main/init.bash)"
+```
+
 ## Additional tasks?
 
 - Remove the `set -x` command from all file headers. Make this optional
