@@ -20,6 +20,7 @@ source "$REPO_DIRECTORY/scripts/helpers/input.bash"
 # Copy the scripts into a temporary directory.
 TEMP_SCRIPTS_DIR=$("$REPO_DIRECTORY/scripts/helpers/copy_scripts.bash")
 export RUNNING_DIR=$TEMP_SCRIPTS_DIR
+cd "$TEMP_SCRIPTS_DIR"
 
 echo "Running the next scripts as the install user [$INSTALL_USER]" >&2
 sudo --preserve-env --user="$INSTALL_USER" bash \
