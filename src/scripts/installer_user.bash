@@ -25,6 +25,9 @@ export HOME="/home/$INSTALL_USER"
 # Run the nonstandard install for regit
 "$RUNNING_DIR/scripts/install/regit.bash"
 
+# Android development packages
+"$RUNNING_DIR/scripts/install/android.bash"
+
 # Install the tldr pages since they don't come prepackaged.
 "$RUNNING_DIR/scripts/configuration/tldr.bash"
 
