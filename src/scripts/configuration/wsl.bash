@@ -18,3 +18,18 @@
 # Likely a service that scans runs a powershell command to get all drive letters
 # and then we parse out all the drive letters that aren't mounted and then run
 # the `sudo mount -t drvfs [LETTER]: /mnt/[letter]` command
+
+rm /etc/wsl.conf
+
+sudo bash  << EOF2
+cat > /etc/wsl.conf < EOF
+[user]
+default = $NEW_USERNAME
+
+[boot]
+systemd = true
+
+[interop]
+appendWindowsPath = false
+EOF
+EOF2
