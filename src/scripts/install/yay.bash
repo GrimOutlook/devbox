@@ -9,7 +9,7 @@ echo "Installing yay AUR helper"
 # installed
 sudo -n pacman -Syy --needed --noconfirm git base-devel
 # Make a temp folder to do the yay installation and move into it
-pushd "$(mktemp -d)" >/dev/null
+pushd "$(mktemp -d)"
 
 # Return to the original directory if any errors are hit, or when this script
 # exits in general
@@ -23,6 +23,6 @@ trap '{ echo "Failed to install yay. Popping out of $(pwd)"; \
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg --install --syncdeps --noconfirm
-popd >/dev/null
+popd
 
 echo "Finished installing yay AUR helper"
