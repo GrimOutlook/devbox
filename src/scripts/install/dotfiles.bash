@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
 
 if test -z DOTFILES_REPO_LINK; then
   echo "No dotfiles repo to install..."
