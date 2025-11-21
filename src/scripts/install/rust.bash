@@ -8,8 +8,4 @@ echo "Installing Rust"
 # the components itself
 yay -S --noconfirm rustup
 
-# Source the new rust binaries.
-# shellcheck disable=SC1091
-source "$HOME/.cargo/env"
-
 echo "Finish installing Rust"
