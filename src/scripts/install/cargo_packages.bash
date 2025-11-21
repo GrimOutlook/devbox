@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/usr/bin/env bash
 
 PACKAGE_FILE="$RUNNING_DIR/resources/packages/cargo.txt"
 PACKAGE_LIST=$(cat "$PACKAGE_FILE" | grep -v '#.*' | grep -v '^$')
