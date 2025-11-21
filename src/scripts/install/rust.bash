@@ -8,4 +8,6 @@ echo "Installing Rust"
 # the components itself
 yay -S --noconfirm rustup
 
+rustup toolchain install stable nightly
+
 echo "Finish installing Rust"
