@@ -10,7 +10,7 @@ cp -r "$REPO_DIRECTORY/." "$TEMP_DIRECTORY"
 
 # Make sure even non-root users can run the scripts in the copied location.
 echo "Setting permissions on copied scripts" >&2
-chmod +x -vR "$TEMP_DIRECTORY" >&2
+chmod 777 -vR "$TEMP_DIRECTORY" >&2
 
 # Echo the temporary directory that was created so it can be grabbed from the
 # outer script.
