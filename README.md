@@ -2,7 +2,12 @@
 
 ## Installation
 
-Run the command `bash <(curl -sL https://raw.githubusercontent.com/GrimOutlook/devbox/refs/heads/main/init.bash)` from a newly installed Arch system.
+Run the below command on a newly installed Arch system.
+
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/GrimOutlook/devbox/refs/heads/main/init.bash)
+```
+
 The only required commands should be `curl`, `pacman`, and `bash` which should all be installed by default.
 
 ## Additional tasks?
