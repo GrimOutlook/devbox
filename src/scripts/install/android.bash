@@ -19,6 +19,7 @@ sudo gpasswd -a "$NEW_USERNAME" android-sdk
 sudo setfacl -R -m g:android-sdk:rwx /opt/android-sdk
 sudo setfacl -d -m g:android-sdk:rwX /opt/android-sdk
 
+sudo -u "$NEW_USERNAME" bash << 'EOF'
 SDK_MANAGER="/opt/android-sdk/cmdline-tools/latest/bin/sdkmanager"
 ANDROID_SYSTEM_IMAGE="$("$SDK_MANAGER" --list | awk '{print $1}' | grep "system-images.*google_apis" | grep -v "CANARY\|ps16k\|playstore\|arm64" | sort | tail -n1)"
 # Install System Image
@@ -27,5 +28,6 @@ echo "y" | "$SDK_MANAGER" --install "$ANDROID_SYSTEM_IMAGE"
 AVD_MANAGER="/opt/android-sdk/cmdline-tools/latest/bin/avdmanager"
 # Create the AVD
 echo "n" | "$AVD_MANAGER" create avd --name phone -k "$ANDROID_SYSTEM_IMAGE"
+EOF
 
 echo "Finished installing Android development tools"
