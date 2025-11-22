@@ -28,6 +28,8 @@ echo "y" | "$SDK_MANAGER" --install "$ANDROID_SYSTEM_IMAGE"
 AVD_MANAGER="/opt/android-sdk/cmdline-tools/latest/bin/avdmanager"
 # Create the AVD
 echo "n" | "$AVD_MANAGER" create avd --name phone -k "$ANDROID_SYSTEM_IMAGE"
+
+sd -F "hw.keyboard = no" "hw.keyboard = yes" "$HOME/.android/avd/phone.avd/config.ini"
 EOF
 
 echo "Finished installing Android development tools"
