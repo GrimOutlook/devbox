@@ -35,6 +35,7 @@ man
 man-db
 man-pages
 pnpm
+pkgfile
 
 # Create books with markdown
 # https://rust-lang.github.io/mdBook/index.html
