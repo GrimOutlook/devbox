@@ -23,7 +23,7 @@ sudo bash  << EOF2
 
 rm /etc/wsl.conf
 
-cat > /etc/wsl.conf < EOF
+cat > /etc/wsl.conf << EOF
 [user]
 default = $NEW_USERNAME
 
