@@ -9,6 +9,9 @@ export HOME="/home/$NEW_USERNAME"
 # Install the Rust so it can be used to build packages.
 "$RUNNING_DIR/scripts/configuration/rust.bash"
 
+# Create SSH keys for github
+"$RUNNING_DIR/scripts/configuration/ssh.bash"
+
 # TODO: Setup SSH keys for given hosts so they can be used when pulling down
 # user's dotfiles repo.
 
