@@ -13,9 +13,6 @@ export HOME="/home/$INSTALL_USER"
 # Install the `yay` package manager
 "$RUNNING_DIR/scripts/install/yay.bash"
 
-# Install the Rust so it can be used to build packages.
-"$RUNNING_DIR/scripts/install/rust.bash"
-
 # Install the packages that can be installed using yay.
 "$RUNNING_DIR/scripts/install/packages.bash"
 
@@ -27,6 +24,9 @@ export HOME="/home/$INSTALL_USER"
 
 # Android development packages
 "$RUNNING_DIR/scripts/install/android.bash"
+
+# Install the Rust so it can be used to build packages.
+"$RUNNING_DIR/scripts/configuration/rust.bash"
 
 # Install the tldr pages since they don't come prepackaged.
 "$RUNNING_DIR/scripts/configuration/tldr.bash"
