@@ -34,7 +34,7 @@ lnav
 man
 man-db
 man-pages
-pnom
+pnpm
 
 # Create books with markdown
 # https://rust-lang.github.io/mdBook/index.html
