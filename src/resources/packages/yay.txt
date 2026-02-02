@@ -56,7 +56,6 @@ ookla-speedtest-bin
 openssh
 pandoc
 plocate
-podlet
 podman
 procs
 python
